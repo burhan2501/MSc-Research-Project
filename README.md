@@ -5,3 +5,4 @@
 ### Burhan Ahmed
 ## Overview 
 #### This repository contains all scripts and tools used in the analysis for my MSc dissertation. The project focuses on comparative genomics of Clostridium perfringens isolates, with particular attention to virulence gene profiles and outbreak associations.
+## Note: Assemblies and results are not included in this repository as they contain non-public data.
