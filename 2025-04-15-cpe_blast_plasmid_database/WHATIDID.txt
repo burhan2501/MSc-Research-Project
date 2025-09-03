@@ -1,0 +1,22 @@
+
+
+
+Mash screen cpe contigs against the plasmid database(fasta files stored locally)
+# Step 1: Unzip plasmid fasta files
+
+# Step 2: Create mash sketch of plasmid database
+mash sketch -o plasmid_db/plasmid_db_sketch plasmid_db/plasmid_fastas/*.fasta
+
+
+# Step 4: Loop over your contigs and run mash screen
+
+for file in cpe_contigs/*.fasta; do
+  name=$(basename "$file" .fasta)
+  mash screen plasmid_db/plasmid_db_sketch.msh "$file" -w -p 2 -v 0.1 -i 0.97 > "results/plasmid_hits_250501/${name}_mash_screen.tsv"
+done
+
+# Step 5: Collate all the plasmid hit data into one tsv file using the python script below
+scripts/collect_plasmid_search_data.py
+
+
+awk -F'\t' '$2 == "Yes" {count++} END {print count}' results/cpe_plasmid_search_winner_summary.tsv
