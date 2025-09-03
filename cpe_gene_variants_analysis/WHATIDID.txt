@@ -1,0 +1,31 @@
+
+# An initial BLAST search using the wellcharacterized cpe gene (GQ225716.1) retrieved seven homologous sequences from GenBank
+with greater than 95% similarity (E value= 0).
+
+# Downloaded aligned FATSA file, saved in input as 190825_NCBI_CPE_variants.fasta
+
+They were visualized using SeaView (v1:4.6.4-1) 
+
+
+makeblastdb -in input/190825_NCBI_CPE_variants.fasta -dbtype nucl -parse_seqids -out cpe_blast_db/cpe_database
+
+
+
+# Blast the C. perfringens asseblies against the cpe db using for loop
+for i in assemblies/*.fasta; do
+    isolate=$(basename "$i" _contigs.fasta)   
+    blastn -query $i -db cpe_blast_db/cpe_database -outfmt '10 qseqid qlen sseqid slen pident mismatch gaps qstart qend length sstart send evalue' -out "results/${isolate}_blast.tsv"
+done
+
+
+# Extracting top matches for each isolates into a csv files
+echo "Isolate,Query_ID,Query_length,Subj_ID,Subj_length,Percent_Identity,Mismatch,Gaps,Q_start,Q_end,Align_length,Subj_start,Subj_end,E-value"> results/collated_cpe_variant_blast_isolates_results.tsv
+for file in results/*_blast.tsv; do
+    isolate=$(basename "$file"|sed 's/_blast\.tsv$/.fasta/')
+    top_match=$(head -n 1 "$file"| tr '\t' ',')
+    echo "${isolate},${top_match}" >> results/collated_cpe_variant_blast_isolates_results.tsv
+done
+
+
+
+Note: Assemblies and results are not included in this repository as they contain non-public data.
