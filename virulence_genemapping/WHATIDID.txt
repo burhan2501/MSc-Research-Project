@@ -1,0 +1,8 @@
+
+# This work was carried out in the UKHSA HPC 
+
+# A bash script was created to run an array job in HPC  using gene_finder pipeline
+
+
+
+The gene detection data were collated in a CSV file gene_detection_matrix.csv using python script (packages) genefinder_matrix.py 
