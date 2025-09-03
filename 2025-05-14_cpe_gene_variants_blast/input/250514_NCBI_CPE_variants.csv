@@ -1,0 +1,27 @@
+Description,Scientific Name,Max Score,Total Score,Query Cover,E value,Per. ident,Acc. Len,Accession  ,Info 
+"Clostridium perfringens strain NCTC8081 enterotoxin (cpe) gene, complete cds",Clostridium perfringens,1773,1773,100%,0,100,960,GQ225716.1,"Reference sequence used in HPC, published in 2010"
+"Clostridium perfringens strain CP859 enterotoxin (cpe) gene, complete cds",Clostridium perfringens,1768,1768,100%,0,99.9,960,MK118949.1,
+"Clostridium perfringens strain CP2 enterotoxin gene, complete cds",Clostridium perfringens,1762,1762,100%,0,99.79,960,FJ205886.1,
+Clostridium perfringens gene encoding enterotoxin,Clostridium perfringens,1762,1762,100%,0,99.79,960,AJ000766.1,
+"Clostridium perfringens plasmid pCP3441 cpe gene for enterotoxin, complete cds, strain: 3441",Clostridium perfringens,1580,1580,100%,0,96.35,978,AB604033.1,"all highlighted one has 100% identity, select only one – AB604033.1 with shortest sequence on NCBI "
+C. perfringens cpe gene,Clostridium perfringens,1751,1751,100%,0,99.58,1020,X81849.1,
+Clostridium perfringens cpe gene,Clostridium perfringens,1768,1768,100%,0,99.9,1342,Y16009.1,
+"Clostridium perfringens strain CN5388 DNA methyltransferase (dcm) gene, partial cds; cpe gene cluster, complete sequence; and truncated transposase 1, truncated transposase 2, and truncated transposase 3 genes, complete cds",Clostridium perfringens,1766,1766,100%,0,99.9,6507,GQ225713.1,"It has 959 sequence, 1 bp less. The only difference between this and GQ225716.1 is a 1bp gap. So exclude this "
+"Clostridium perfringens strain Z1322PCP0048 plasmid pZ1322PCP0048-2, complete sequence",Clostridium perfringens,1580,1580,100%,0,96.35,62976,CP148721.1,"all highlighted one has 100% identity, select only one "
+"Clostridium perfringens strain Z1322PCP0092 plasmid pZ1322PCP0092-2, complete sequence",Clostridium perfringens,1580,1580,100%,0,96.35,65975,CP148702.1,"all highlighted one has 100% identity, select only one "
+"Clostridium perfringens strain Z1322WCP0013 plasmid pZ1322WCP0013-2, complete sequence",Clostridium perfringens,1580,1580,100%,0,96.35,67348,CP148685.1,"all highlighted one has 100% identity, select only one "
+"Clostridium perfringens plasmid pCPPB-1 DNA, complete sequence",Clostridium perfringens,1580,1580,100%,0,96.35,67479,AB604032.1,"all highlighted one has 100% identity, select only one "
+"Clostridium perfringens E CP118 plasmid pCP118-67k DNA, complete genome",Clostridium perfringens E,1580,1580,100%,0,96.35,67488,AP025228.1,"all highlighted one has 100% identity, select only one "
+Clostridium perfringens strain AAD1903a plasmid pCPAAD1903_2,Clostridium perfringens,1580,1580,100%,0,96.35,67493,CP075994.1,"all highlighted one has 100% identity, select only one "
+"Clostridium perfringens strain Z1322PCP0088 plasmid pZ1322PCP0088-2, complete sequence",Clostridium perfringens,1580,1580,100%,0,96.35,113466,CP148706.1,"all highlighted one has 100% identity, select only one "
+"Clostridium perfringens strain CQ145 plasmid pcq145-tcppcp, complete sequence",Clostridium perfringens,1768,1768,100%,0,99.9,130020,CP159339.1,
+"Clostridium perfringens strain Z1322PCP0088 chromosome, complete genome",Clostridium perfringens,1535,1535,100%,0,95.52,3370470,CP148705.1,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+"Clostridium perfringens strain CP396 enterotoxin (cpe) gene, complete cds",Clostridium perfringens,1773,1773,100%,0,100,960,MH900564.1,Same as reference sequence but more recent publication in 2019
